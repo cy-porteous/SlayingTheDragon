@@ -14,16 +14,17 @@ body {
 font-family: "Open Sans", sans-serif;
 }
 
+
+/*
+header elements */
+
 .header {
-width: 90%;
-margin-inline: auto;
 display: flex;
-/* justify-content: space-between; */
 align-items: center;
 padding: 1rem 0;
 }
 
-.title {
+.header__title {
 flex: 1;
 text-transform: uppercase;
 font-weight: 900;
@@ -34,7 +35,7 @@ justify-content: center;
 
 }
 
-.menu {
+.header__menu {
 display: flex;
 gap: 1rem;
 text-transform: capitalize;
@@ -43,21 +44,50 @@ flex: 1;
 justify-content: center;
 }
 
-.link {
-text-decoration: none;
-color: #000;
+.header__link {
+  text-decoration: none;
+  color: #000;
 
 }
 
-.button-container {
-display: flex;
-gap: 1rem;
-font-family: inherit;
+.header__btn-container {
+  display: flex;
+  gap: 1rem;
+  font-family: inherit;
 flex: 1;
 justify-content: center;
 }
 
+/*
+hero section */
+
+.hero__section {
+margin-top: 10rem;
+text-align: center;
+
+}
+
+.hero__title {
+font-size: 4rem;
+line-height: 1;
+letter-spacing: -0.05em;
+max-width: 25ch;
+margin-inline: auto;
+}
+
+.hero__description {
+font-size: 1.2rem;
+max-width: 60ch;
+margin: 2rem auto;
+
+}
+
+
+
+/* utility elements */
+
 .button {
+display: inline-block;
 border: none;
 background-color: #000;
 color: #fff;
@@ -65,4 +95,11 @@ border-radius: 4px;
 padding: 0.5rem 1rem;
 cursor: pointer;
 text-transform: capitalize;
+text-decoration: none;
+}
+
+.flex__container {
+
+width: 90%;
+margin-inline-start: auto;
 }
