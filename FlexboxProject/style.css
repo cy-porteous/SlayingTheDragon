@@ -51,9 +51,9 @@ justify-content: center;
 }
 
 .header__btn-container {
-  display: flex;
-  gap: 1rem;
-  font-family: inherit;
+display: flex;
+gap: 1rem;
+font-family: inherit;
 flex: 1;
 justify-content: center;
 }
@@ -82,7 +82,73 @@ margin: 2rem auto;
 
 }
 
+/* pricing section */
 
+.pricing__section {
+margin-top: 10rem;
+
+}
+
+.pricing__title {
+font-size:2.25rem ;
+letter-spacing: -0.05rem;
+line-height: 1;
+}
+
+.pricing__description {
+font-size: 1.2rem;
+max-width: 45ch;
+margin: 1rem 0;
+
+}
+
+.card__element-container {
+display: flex;
+gap: 2rem;
+
+}
+
+.card__box {
+background-color:#000 ;
+color: #fff;
+padding: 2rem;
+font-size: 0.75rem;
+border-radius: 20px;
+flex: 1;
+}
+
+.pricing__price {
+font-size: 2rem;
+}
+
+.pricing__plan {
+margin: 1rem 0 0.25rem;
+}
+
+.pricing__plan-description {
+color: #ccc;
+
+}
+
+.pricing__btn {
+background-color: #fff;
+color: #000;
+width: 100%;
+padding: 0.5rem 1rem;
+margin: 2rem 0;
+font-weight: 700;
+border-radius: 10000000px;
+}
+
+.pricing__features {
+padding-left: 1em;
+display: flex;
+flex-direction: column;
+gap: 1 rem;
+font-size: 0.9rem;
+color: #ccc;
+
+}
 
 /* utility elements */
 
@@ -99,7 +165,6 @@ text-decoration: none;
 }
 
 .flex__container {
-
 width: 90%;
 margin-inline-start: auto;
 }
