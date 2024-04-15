@@ -168,3 +168,54 @@ text-decoration: none;
 width: 90%;
 margin-inline-start: auto;
 }
+
+/* features section */
+
+.features__section {
+margin-top: 10rem;
+text-align: center;
+
+}
+
+.features__title {
+font-size: 2.25rem;
+letter-spacing: -0.05rem;
+line-height: 1;
+
+}
+
+.features__description {
+font-size: 1.2rem;
+max-width: 45ch;
+margin: 1rem auto;
+
+}
+
+.features__container {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 1rem;
+
+}
+
+.f-card__box {
+border: 1px solid #ccc;
+padding: 2rem;
+border-radius: 10px;
+width: 500px;
+
+
+
+}
+
+.f-card__title {
+line-height: 1;
+
+
+}
+.f-card__description {
+margin-top: 1rem;
+
+
+}
