@@ -217,5 +217,40 @@ line-height: 1;
 .f-card__description {
 margin-top: 1rem;
 
+}
+
+/* contact section */
+
+.contact__section{
+margin-top: 10rem;
+text-align: center;
+}
+
+.contact__section-title {
+font-size: 2.25rem;
+letter-spacing: -0.05rem;
+line-height: 1;
+}
+
+.contact__section-description {
+font-size: 1.2rem;
+max-width: 60ch;
+margin: 1rem auto;
+}
+
+/* footer section */
+
+.footer__section {
+text-align: center;
+margin-top: 10rem;
+}
+
+.footer__title {
+text-transform: capitalize;
+color: #ccc;
+letter-spacing: 0.1;
+font-size: 1rem;
+font-weight: 300;
+
 
 }
