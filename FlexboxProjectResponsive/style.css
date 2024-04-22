@@ -1,0 +1,542 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* utility elements */
+
+.button {
+display: inline-block;
+border: none;
+background-color: #000;
+color: #fff;
+border-radius: 4px;
+padding: 0.5rem 1rem;
+cursor: pointer;
+text-transform: capitalize;
+text-decoration: none;
+}
+
+.flex__container {
+width: 90%;
+margin-inline-start: auto;
+}
+
+/*
+header elements */
+
+.header__bars {
+  display: none;
+}
+
+.header {
+display: flex;
+align-items: center;
+padding: 1rem 0;
+}
+
+.header__title {
+flex: 1;
+text-transform: uppercase;
+font-weight: 900;
+font-size: 1.5rem;
+color: black;
+letter-spacing: 1px;
+justify-content: center;
+
+}
+
+.header__menu {
+display: flex;
+gap: 1rem;
+text-transform: capitalize;
+font-weight: 500;
+flex: 1;
+justify-content: center;
+}
+
+.header__link {
+  text-decoration: none;
+  color: #000;
+
+}
+
+.header__btn-container {
+display: flex;
+gap: 1rem;
+font-family: inherit;
+flex: 1;
+justify-content: center;
+}
+
+@media (min-width: 300px) and (max-width: 974px) {
+  .header {
+    justify-content: space-between;
+  }
+
+
+  .header__title {
+  font-size: 1.1rem;
+  flex: 0 1 auto;
+
+
+  }
+
+  .header__menu {
+
+   display: none;
+  }
+
+  .header__btn {
+
+  display: none;
+  }
+
+  .header__bars {
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+
+  }
+}
+
+
+
+
+/*
+hero section */
+
+.hero__section {
+margin-top: 10rem;
+text-align: center;
+
+}
+
+.hero__title {
+font-size: 4rem;
+line-height: 1;
+letter-spacing: -0.05em;
+max-width: 25ch;
+margin-inline: auto;
+}
+
+.hero__description {
+font-size: 1.2rem;
+max-width: 60ch;
+margin: 2rem auto;
+
+}
+
+@media (max-width: 974px)
+{
+
+.hero__title {
+font-size: 3rem;
+}
+
+.hero__description{
+font-size: 0.9rem;
+margin: 1.5rem auto;
+}
+
+.hero__button {
+font-size: 0.9rem;
+
+}
+
+}
+
+@media (max-width: 595px)
+{
+.hero__section {
+  margin-top: 5rem;
+}
+
+.hero__title {
+font-size: 2.5rem;
+}
+
+.hero__description{
+font-size: 0.7rem;
+margin: 1rem auto;
+}
+
+.hero__button {
+font-size: 0.8rem;
+
+}
+}
+
+@media (max-width: 496px) {
+.hero__title {
+font-size: 2.25rem;
+    }
+.hero__button {
+font-size: 0.6rem;
+}
+}
+
+@media (max-width: 447px) {
+.hero__title {
+font-size: 1.6rem;
+      }
+
+.hero__button {
+font-size: 0.4rem;
+
+}
+
+}
+
+/* pricing section */
+
+.pricing__section {
+margin-top: 10rem;
+
+}
+
+.pricing__title {
+font-size:2.25rem ;
+letter-spacing: -0.05rem;
+line-height: 1;
+}
+
+.pricing__description {
+font-size: 1.2rem;
+max-width: 45ch;
+margin: 1rem 0;
+
+}
+
+.card__element-container {
+display: flex;
+gap: 2rem;
+flex-wrap: wrap;
+
+}
+
+.card__box {
+background-color:#000 ;
+color: #fff;
+padding: 2rem;
+font-size: 0.75rem;
+border-radius: 20px;
+flex: 1;
+min-width: 400px;
+}
+
+.pricing__price {
+font-size: 2rem;
+}
+
+.pricing__plan {
+margin: 1rem 0 0.25rem;
+}
+
+.pricing__plan-description {
+color: #ccc;
+
+}
+
+.pricing__btn {
+background-color: #fff;
+color: #000;
+width: 100%;
+padding: 0.5rem 1rem;
+margin: 2rem 0;
+font-weight: 700;
+border-radius: 10000000px;
+}
+
+.pricing__features {
+padding-left: 1em;
+display: flex;
+flex-direction: column;
+gap: 1 rem;
+font-size: 0.9rem;
+color: #ccc;
+
+}
+
+@media (max-width: 974px) {
+.pricing__title {
+font-size: 2rem;
+}
+
+.pricing__description {
+font-size: 1rem;
+}
+
+.pricing__price {
+font-size: 1.5rem;
+}
+
+}
+
+@media (max-width: 595px) {
+.pricing__section {
+margin-top: 5rem;
+}
+
+.card__box {
+ min-width: 320px;
+}
+
+.pricing__title {
+font-size: 1.5rem;
+  }
+
+.pricing__description {
+font-size: 1rem;
+margin: 0.5rem 0;
+  }
+
+  }
+
+@media (max-width: 496px) {
+.pricing__title {
+font-size: 1.2rem;
+        }
+.pricing__description {
+font-size: 0.8rem;
+ }
+}
+
+@media (max-width: 447px) {
+.pricing__section {
+margin-top: 4rem;
+    }
+.pricing__title {
+font-size: 1rem;
+          }
+
+.pricing__description {
+font-size: 0.6rem;
+
+   }
+ }
+
+
+/* features section */
+
+.features__section {
+margin-top: 10rem;
+text-align: center;
+
+}
+
+.features__title {
+font-size: 2.25rem;
+letter-spacing: -0.05rem;
+line-height: 1;
+
+}
+
+.features__description {
+font-size: 1.2rem;
+max-width: 45ch;
+margin: 1rem auto;
+
+}
+
+.features__container {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 1rem;
+
+}
+
+.f-card__box {
+border: 1px solid #ccc;
+padding: 2rem;
+border-radius: 10px;
+width: 500px;
+
+
+
+}
+
+.f-card__title {
+line-height: 1;
+
+
+}
+.f-card__description {
+margin-top: 1rem;
+
+}
+
+@media (max-width: 974px) {
+.features__title {
+font-size: 1.8rem;
+}
+
+.features__description {
+font-size: 1rem;
+}
+
+
+}
+
+@media (max-width: 595px) {
+
+
+.features__title {
+font-size: 1.4rem;
+    }
+
+.features__description {
+font-size: 0.9rem;
+
+}
+
+    }
+
+@media (max-width: 496px) {
+.features__title {
+font-size: 1.2rem;
+          }
+.features__description {
+font-size: 0.9rem;
+margin: 0.5rem auto;
+}
+
+.f-card__title {
+font-size: 1rem;
+}
+
+.f-card__description {
+margin-top: 0.5rem;
+font-size: 0.7rem;
+}
+  }
+
+@media (max-width: 447px) {
+.features__description {
+ font-size: 0.8rem ;
+ margin: 0.5rem auto;
+  }
+.features__title {
+font-size: 1rem;
+            }
+
+.f-card__title {
+font-size: 0.9rem;
+}
+
+.f-card__description {
+margin-top: 0.5rem;
+font-size: 0.7rem;
+}
+              }
+
+
+/* contact section */
+
+.contact__section{
+margin-top: 10rem;
+text-align: center;
+}
+
+.contact__section-title {
+font-size: 2.25rem;
+letter-spacing: -0.05rem;
+line-height: 1;
+}
+
+.contact__section-description {
+font-size: 1.2rem;
+max-width: 60ch;
+margin: 1rem auto;
+}
+
+@media (max-width: 974px) {
+.contact__section-title {
+font-size: 2rem;
+  }
+
+.contact__section-description {
+font-size: 1rem;
+  }
+
+
+  }
+
+@media (max-width: 595px) {
+
+.contact__section {
+  margin-top: 5rem;
+}
+.contact__section-title {
+font-size: 1.7rem;
+      }
+
+.contact__section-description {
+font-size: 0.9rem;
+
+  }
+
+      }
+
+@media (max-width: 496px) {
+.contact__section-title {
+font-size: 1.4rem;
+            }
+.contact__section-description {
+font-size: 0.8rem;
+margin: 0.5rem auto;
+  }
+
+.contact__section-btn {
+font-size: 0.8.rem;
+padding: 0.3rem 0.7rem;
+}
+    }
+
+@media (max-width: 447px) {
+
+.contact__section-btn {
+padding: 0.3rem 0.7rem;
+font-size: 0.7;
+  }
+
+.contact_section-title {
+font-size: 1rem;
+  }
+
+.contact__section-description {
+font-size: 0.7rem ;
+margin: 0.5rem auto;
+     }
+
+
+                }
+
+/* footer section */
+
+.footer__section {
+text-align: center;
+margin-top: 10rem;
+}
+
+.footer__title {
+text-transform: capitalize;
+color: #ccc;
+letter-spacing: 0.1;
+font-size: 1rem;
+font-weight: 300;
+
+
+}
