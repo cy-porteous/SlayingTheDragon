@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+}
+
+* {
+margin:0;
+padding: 0;
+line-height: 1.5;
+}
+
+/*
+header section */
+
+.hero {
+
+height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+justify-content: center;
+background-image: url('resources/images/john-fowler-7Ym9rpYtSdA-unsplash.jpg');
+background-repeat: no-repeat;
+background-position: bottom center;
+background-size: cover;
+
+
+}
+
+.header__title {
+font-family: "Josefin Sans", sans-serif;
+color: white;
+font-size: 4rem;
+text-transform: uppercase;
+letter-spacing: -0.15rem;
+
+}
+
+.header__description {
+
+font-family: "Josefin Sans", sans-serif;
+color: white;
+font-size: 1.2rem;
+max-width: 60ch;
+}
