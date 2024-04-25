@@ -1,0 +1,143 @@
+.pricing__section__title {
+font-size: 0.75rem;
+text-transform: uppercase;
+margin-bottom: 1rem;
+font-family: "Exo 2", sans-serif;
+
+}
+
+.pricing__section {
+margin-top: 5rem;
+
+}
+
+.pricing__box--0margin {
+margin: 0;
+}
+
+.pricing__box-btn {
+font-size: 0.75rem;
+
+}
+
+.pricing__box {
+color: white;
+border-radius: 6px;
+background-color: black;
+padding: 2rem;
+margin-top: 1rem;
+}
+
+.pricing__box-title {
+/* color: white; */
+font-family: "Exo 2", sans-serif;
+font-size: 1.125rem;
+}
+
+.pricing__box-description-1 {
+/* color: white; */
+font-family: "Exo 2", sans-serif;
+font-size: 0.75rem;
+margin-bottom: 2.5rem;
+}
+
+.pricing__box-description-2 {
+/* color: white; */
+font-family: "Exo 2", sans-serif;
+font-size: 0.75rem;
+color: #888;
+margin-bottom: 1rem;
+}
+
+/* xs */
+@media (min-width: 475px) {
+.pricing__section__title {
+font-size: 0.875rem;
+}
+
+.pricing__box-title {
+font-size: 1.25rem;
+}
+.pricing__box-description-1, .pricing__box-description-2 {
+font-size: 0.875rem;
+
+}
+
+.pricing__box-btn {
+font-size: 0.875rem;
+}
+}
+
+/* sm */
+/* @media (min-width: 640px) {}  */
+
+/* md */
+/* @media (min-width: 768px) {}  */
+
+/* lg */
+@media (min-width: 1024px) {
+
+.pricing__box {
+margin: 0;
+gap: 2.5rem;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: space-between;
+
+}
+.pricing__grid-container {
+grid-template-areas:
+'css css css jav'
+'rea rea nex nex' ;
+display: grid;
+gap: 1rem;
+
+}
+.pricing__box--css {
+grid-area: css;
+
+}
+.pricing__box--js {
+grid-area: jav;
+}
+
+.pricing__box--react {
+grid-area: rea;
+
+}
+
+.pricing__box--next {
+
+grid-area: nex;
+}
+
+.pricing__box-description-1 {
+margin-bottom: 0;
+
+}
+}
+
+/* xl */
+@media (min-width: 1280px) {
+.pricing__section__title {
+font-size: 1rem;
+}
+
+.pricing__box-title {
+font-size: 1.5rem;
+ }
+.pricing__box-description-1, .pricing__box-description-2 {
+font-size: 1rem;
+}
+
+.pricing__box-btn {
+font-size: 1rem;
+}
+
+
+
+}
+
+/* 2xl */
+/* @media (min-width: 1536px) {}  */
