@@ -1,0 +1,7 @@
+.footer__text {
+text-transform: uppercase;
+text-align: center;
+font-size: var(--size--xs);
+letter-spacing: 0.1em;
+user-select: none;
+}
